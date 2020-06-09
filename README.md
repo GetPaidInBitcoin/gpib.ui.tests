@@ -2,6 +2,17 @@
 
 Selenium tests for www.getpaidinbitcoin.com.au
 
+## Tutorial and example on this structure
+
+https://github.com/mikearias3/QABoy/tree/master/QABoyAutomation-Final/QABoyAutomationFramework
+https://qaboy.com/2018/01/15/automated-framework-using-selenium-with-python/
+https://www.selenium.dev/documentation/en/guidelines_and_recommendations/page_object_models/
+
+### Todo
+
+- add pytest to setup
+- add python-dotenv for env vars?
+
 ## Setup
 
 ### Install the web driver
