@@ -37,7 +37,15 @@ NB: Needs a better package management solution
 ```bash
 git clone git@github.com:GetPaidInBitcoin/gpib.ui.tests.git
 cd gpib.ui.tests
-./setup.sh
+
+# Create a virtual env, so system upgrades don't break the test suite
+python3 -m ./venv
+
+# Start the virtual env
+source ./venv/bin/activate
+
+# Install dependencies
+pip3 install selenium pytest
 ```
 
 ## Usage

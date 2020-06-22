@@ -15,6 +15,7 @@ class TestLogin(unittest.TestCase):
         login_screen.validate_form_is_present()
         login_screen.validate_email_input()
         login_screen.validate_password_input()
+        login_screen.validate_reset_password()
         login_screen.validate_login_button()
 
     def tearDown(self):

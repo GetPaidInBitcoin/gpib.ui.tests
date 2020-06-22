@@ -28,7 +28,7 @@ class LoginScreen:
 
     def validate_email_input(self):
         assert self.email.is_displayed()
-        # assert self.email.get_attribute("type") == "email"
+        assert self.email.get_attribute("type") == "email"
 
     def validate_password_input(self):
         assert self.password.is_displayed()
@@ -37,7 +37,7 @@ class LoginScreen:
     def validate_reset_password(self):
         assert self.resetPassword.is_displayed()
         assert self.resetPassword.get_attribute(
-            "href") == strings.reset_password_url
+            "href") == strings.base_url+strings.reset_password_url
 
     def validate_login_button(self):
         assert self.loginBtn.is_displayed()
