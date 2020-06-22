@@ -47,16 +47,12 @@ cd gpib.ui.tests
 To activate the virtual env so you can run the test suite:
 
 ```bash
-./start.sh
-# Or
 source ./venv/bin/activate
 ```
 
 When you're finished with the test suite:
 
 ```bash
-./stop.sh
-# Or
 deactivate
 ```
 
@@ -64,4 +60,15 @@ deactivate
 
 #### Execute all tests
 
+```bash
+cd src
+python3 -m pytest test_cases/
+```
+
 #### Execute Login screen tests
+
+```bash
+cd src
+python3 -m pytest test_cases/test_login.py
+
+```
